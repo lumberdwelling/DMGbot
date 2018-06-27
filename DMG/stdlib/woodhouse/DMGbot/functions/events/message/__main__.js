@@ -20,7 +20,7 @@ module.exports = (user, channel, text = '', event = {}, botToken = null, callbac
   // Only send a response to certain messages
   if (text.match(/dmgbot/i)) {
     callback(null, {
-      text: `Hey there <@${user}>, roll for initiative`,
+      text: `Hey there <@${user}>, roll for initiative!`,
       attachments: [
         // You can customize your messages with attachments.
         // See https://api.slack.com/docs/message-attachments for more info.

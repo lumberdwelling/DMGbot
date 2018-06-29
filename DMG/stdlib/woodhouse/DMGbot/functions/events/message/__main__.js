@@ -18,9 +18,9 @@ const lib = require('lib')({token: process.env.STDLIB_TOKEN});
 module.exports = (user, channel, text = '', event = {}, botToken = null, callback) => {
 
   // Only send a response to certain messages
-  if (text.match(/dmgbot/i)) {
+  if (text.match()) {
     callback(null, {
-      text: `Hey there <@${user}>, roll for initiative!`,
+      text: ``,
       attachments: [
         // You can customize your messages with attachments.
         // See https://api.slack.com/docs/message-attachments for more info.
